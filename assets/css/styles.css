@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos bajo 576 px*/
+@media screen and (max-width: 576px) {
+
+/* Estructura general*/
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "sidebar"
+    "main"
+    "footer";
+}
+
+}
+
+
+
+
+
+
+/* Estilos sobre 576 px*/
+@media screen and (min-width: 576px)  {
+
+    /* Estructura general*/
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        "sidebar main"
+        "sidebar main"
+        "footer main";
+    }
+}
