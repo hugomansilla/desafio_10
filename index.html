@@ -19,7 +19,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -30,18 +30,50 @@
         <!-- Barra lateral -->
         <div class="sidebar">
 
+            <!--
             <div class="sidebar-title">
                 <i class="fa-solid fa-clipboard-list fa-lg"></i>
                 <h3>Validación de modelos</h3> 
-            </div>
+            </div>-->
 
+            <!--
             <div class="sidebar-navbar">
                 <div class="navbar">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span>&#9776</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span >&#9776</span>
                     </button>
                 </div>
-            </div>
+            </div>-->
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/logo_blanco.png" alt="Validación de modelos" width="30" height="24">
+                        <span>Validación de modelos</span>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span>&#9776</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
         </div>
 
@@ -50,37 +82,37 @@
             <div class="grid-main">
 
                 <div class="grid-main-item">
-                    <img src="./assets/img/img1.jpg" alt="">
+                    <img src="./assets/img/img1.jpg" alt="" class="rounded">
                     <h4>Pilar 1</h4>
                     <div class="grid-main-item-button">Cotizar</div>
                 </div>
 
                 <div class="grid-main-item">
-                    <img src="./assets/img/img2.jpg" alt="">
+                    <img src="./assets/img/img2.jpg" alt="" class="rounded">
                     <h4>Pilar 2</h4>
                     <div class="grid-main-item-button">Cotizar</div>
                 </div>
 
                 <div class="grid-main-item">
-                    <img src="./assets/img/img3.jpg" alt="">
+                    <img src="./assets/img/img3.jpg" alt="" class="rounded">
                     <h4>Pilar 3</h4>
                     <div class="grid-main-item-button">Cotizar</div>
                 </div>
 
                 <div class="grid-main-item">
-                    <img src="./assets/img/img1.jpg" alt="">
+                    <img src="./assets/img/img1.jpg" alt="" class="rounded">
                     <h4>Pilar 4</h4>
                     <div class="grid-main-item-button">Cotizar</div>
                 </div>
 
                 <div class="grid-main-item">
-                    <img src="./assets/img/img2.jpg" alt="">
+                    <img src="./assets/img/img2.jpg" alt="" class="rounded">
                     <h4>Pilar 5</h4>
                     <div class="grid-main-item-button">Cotizar</div>
                 </div>
 
                 <div class="grid-main-item">
-                    <img src="./assets/img/img3.jpg" alt="">
+                    <img src="./assets/img/img3.jpg" alt="" class="rounded">
                     <h4>Pilar 6</h4>
                     <div class="grid-main-item-button">Cotizar</div>
                 </div>
@@ -102,6 +134,10 @@
         </div>
 
     </div>
+
+  <!-- Scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
