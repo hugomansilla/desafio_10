@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 a{
@@ -160,14 +161,17 @@ a{
     display: grid;
     grid-template-areas:
     "sidebar main"
+    "sidebar main"
     "footer main";
+    grid-template-rows: auto 1fr auto;
+
 }
 
 /* Barra lateral*/
 .sidebar{
     grid-area: sidebar;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
     background-color: #416FE8;
     color: white;
@@ -206,6 +210,8 @@ a{
 .main{
     grid-area: main;
     background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .grid-main{
@@ -229,7 +235,7 @@ a{
 
 .grid-main-item img{
     width: 60%;
-    height: 60%;
+    height: 100%;
     align-self: center;
 }
 
@@ -262,7 +268,7 @@ a{
 /*Efecto: Agregar el texto encima de la imagen*/
 .texto {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
